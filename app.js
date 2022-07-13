@@ -55,13 +55,12 @@ console.log(bool)
 //     console.log(`not enough money - you still owe ${difference * -1} dollars`)
 // }
 
-let cash = 50
+let cash = 30
 let price = 40
-let isStoreOpen = false
+let isStoreOpen = true
 
-if (cash >= price && isStoreOpen === true) {
-    console.log('print the reciept')
-}
+// let str = cash >= price && isStoreOpen ? 'give receipt' : 'do not give reciept'
+// console.log(str)
 
 // truthy or falsy values
 
@@ -84,5 +83,38 @@ hot ? console.log('weather is hot outside') : console.log('weatehr is cold')
 let subscribed = false
 let loggedIn = true
 
-let str = subscribed && loggedIn ? 'show the video' : 'hide the video'
-console.log(str)
+// loops
+// DRY = DON'T REPEAT yourself
+
+// let count = 1;
+
+// while (count <= 10) {
+//     console.log(count)
+//     count = count + 1;
+// }
+
+// for (let i = 0; i < 100; i++) {
+//     console.log(i)
+
+// }
+
+// for (let i = 1; i <= 20; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log(`${i} -> Frontend Simplified`)
+//     }
+//     else if (i % 3 === 0) {
+//         console.log(`${i} -> Frontend`)
+//     }
+//     else if (i % 5 === 0) {
+//         console.log(`${i} -> Simplified`)
+//     }
+//     else {
+//         console.log(`${i} -> ${i}`)
+//     }
+// }
+
+const str = 'Frontend Simplified'
+
+for (let i = 0; i < str.length; i++) {
+    console.log(str[i])
+}
