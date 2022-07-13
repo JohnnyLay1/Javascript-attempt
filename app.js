@@ -147,3 +147,17 @@ const convertCelciusToFahrenheit = (celsius) => {
 console.log(convertCelciusToFahrenheit(0))
 console.log(convertCelciusToFahrenheit(10))
 console.log(convertCelciusToFahrenheit(30))
+
+// let arr = [10, 20, 30, 40, 100]
+
+// let newArr = arr.filter((element) => {
+//     return (element < 40)
+// })
+
+// console.log(newArr)
+
+let arr = ['A+', 'A', 'FAIL']
+
+let goodGrades = grades.filter((element) => {
+    return element < fail
+})
