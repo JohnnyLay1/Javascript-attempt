@@ -7,14 +7,14 @@ let temperature = 20
 let isRaining = true
 let planet = 'Earth'
 
-temperature = 32
+// temperature = 32
 
-console.log(temperature)
+// console.log(temperature)
 
-let celsius = 10;
-let fahrenheit = celsius * 1.8 + 32;
+// let celsius = 10;
+// let fahrenheit = celsius * 1.8 + 32;
 
-console.log(fahrenheit)
+// console.log(fahrenheit)
 
 // Equality
 
@@ -113,8 +113,37 @@ let loggedIn = true
 //     }
 // }
 
-const str = 'Frontend Simplified'
 
-for (let i = 0; i < str.length; i++) {
-    console.log(str[i])
+// const str = 'Frontend Simplified'
+
+// for (let i = 0; i < str.length; i++) {
+//     console.log(str[i])
+// }
+
+// // Function Definition
+// function welcomePersonToFES(firstName, lastName) {
+//     console.log(`welcome to Frontend Simplified, ${firstName} ${lastName}`)
+// }
+
+// // Call the Function
+// welcomePersonToFES('David', 'Bragg');
+// welcomePersonToFES('Zen', 'master');
+// welcomePersonToFES('Mitri', 'last');
+
+function sumOfTwoNumbers(num1, num2) {
+    return num1 + num2
 }
+
+console.log(sumOfTwoNumbers(10, 20))
+
+// function convertCelciusToFahrenheit(celsius) {
+//     return celsius * 1.8 + 32;
+// }
+
+const convertCelciusToFahrenheit = (celsius) => {
+    return celsius * 1.8 + 32;
+}
+
+console.log(convertCelciusToFahrenheit(0))
+console.log(convertCelciusToFahrenheit(10))
+console.log(convertCelciusToFahrenheit(30))
