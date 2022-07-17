@@ -158,6 +158,71 @@ console.log(convertCelciusToFahrenheit(30))
 
 let grades = ['A+', 'A', 'FAIL']
 
+// Create a new empty array called 'goodGrades'
+
+let goodGrades = []
+
 // let goodGrades = grades.filter((element) => element !== 'FAIL')
 
 // console.log(goodGrades)
+
+// for (let i = 0; i < grades.length; ++i) {
+//     // add the current element onto 'goodGrades' only if
+//     // the current elemt is not equal to 'FAIL'
+//     console.log(grades[i])
+// }
+
+for (let i = 0; i < grades.length; ++i) {
+    if (grades[i] !== 'FAIL') {
+        goodGrades.push(grades[i]);
+    }
+}
+
+console.log(goodGrades)
+
+// let grades = ['FAIL', 'FAIL', 'B']
+
+// 'my version' let pass = grades.filter((element) => element !== 'FAIL')
+
+// console.log(pass)
+
+// new array called arr.map
+
+let arr = [1, 4, 9, 16]
+
+let newArray = arr.map(element => 'dog')
+
+console.log(newArray)
+
+/** Trun eachb element in an array of dollars into cents
+ *  try without using the arr.map method
+ * 
+ * @examples
+ * [1, 5, 10, 3] => [100, 500, 1000, 300]
+ * [0, 10, 20] => [0, 1000, 2000]
+ */
+
+let dollars = [1, 5, 10, 3];
+
+// create new 'cents' array and set to empty nothing
+let cents = []
+
+// loop over every element in dollars'
+
+for (let i = 0; i < dollars.length; ++i) {
+    cents.push(dollars[i] * 100);
+}
+    // multiply the element by 100
+    // add this element onto 'cents' array
+
+// console leg cents
+console.log(cents)
+
+// let cents = dollars.map((element) => {
+//     console.log(element)
+//     return element * 100;
+// })
+
+// let cents = dollars.map(element => element * 100)
+
+// console.log(cents)
