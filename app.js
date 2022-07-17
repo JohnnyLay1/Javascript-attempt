@@ -226,3 +226,61 @@ console.log(cents)
 // let cents = dollars.map(element => element * 100)
 
 // console.log(cents)
+
+
+
+/* OBJECTS, multi properties in one variable*/
+
+let userFirstName = 'Johnny'
+let userLastName = 'Lay'
+let userDiscordId = 'Johnny Lay#0001'
+let userSubscriptionStatus = 'VIP'
+
+// Using comma to seperate the elements
+// all above is represented below in one array? with let 'user'
+
+let users = [{
+    username: 'Johnny',
+    email: 'johnnylay@gmail.com',
+    subscriptionStatus: 'VIP',
+    password: 'test123',
+    discordId: 'Johnny Lay#0001',
+    lessonsCompleted: [0, 1]
+},
+// seperate each user with comma AGAIN
+{
+    username: 'David',
+    email: 'DavidBragg@gmail.com',
+    subscriptionStatus: 'VIP',
+    password: 'david123',
+    discordId: 'David#0001',
+    lessonsCompleted: [0, 1, 2, 3],
+}]
+
+
+// console.log(user.username[0])
+
+// console.log(userSubscriptionStatus)
+
+// console.log(user.lessonsCompleted.map(element => element * 20))
+
+// for multiple opbects between 'letusers [{}]' as 
+// above console.log(users[0].lessonsCompleted.map(element => element * 2))
+
+function login(email, password) {
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].email === email) {
+            console.log(users[i]);
+            if (users[i].password === password) {
+                console.log('log the user in - the details are correct')
+            }
+            else {
+                console.log ('password is incorrect - try again')
+            }
+            return;
+        }
+    }
+    console.log('could not find an email that matches')
+}
+
+login('johnnylay@gmail.com', 'test123');
