@@ -156,8 +156,8 @@ console.log(convertCelciusToFahrenheit(30))
 
 // console.log(newArr)
 
-let arr = ['A+', 'A', 'FAIL']
+let grades = ['A+', 'A', 'FAIL']
 
-let goodGrades = grades.filter((element) => {
-    return element < fail
-})
+// let goodGrades = grades.filter((element) => element !== 'FAIL')
+
+// console.log(goodGrades)
