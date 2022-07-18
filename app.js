@@ -284,3 +284,81 @@ function login(email, password) {
 }
 
 login('johnnylay@gmail.com', 'test123');
+
+
+/** TEST
+ * Create a register function that accepts:
+ * - username
+ * - email
+ * - password
+ * - subscription
+ * - discordId
+ * - lessonsCompleted
+ * 
+ * Inside your register fuction:
+ * 1. Create a user object
+ * 2. Push this user object onto the 'users' array
+ */
+
+// create a normal function
+function register(user){
+    users.push(user);
+}
+    // ** now remove and just use 'user' after register()
+    // name,
+    // email,
+    // password,
+    // subscriptionStatus,
+    // discordId,
+    // lessonsCompleted
+    // creating a user object
+    //  {
+    //     let user = {
+    //     username: name,
+    //     email: email,
+    //     password: password,
+    //     subscriptionStatus: subscriptionStatus,
+    //     discordId: discordId,
+    //     lessonsCompleted: lessonsCompleted,
+    //     }
+    //     // ** now to push the 'users' array with the 'let user' as above.
+    //     users.push(user);
+    // }
+// ** needs to be in the same order or else it is undefined
+register({
+ username: "David",
+ email: "DavidBragg@gmail.com",
+ password: "david123",
+ subscriptionStatus: "VIP",
+ discordId: "David#0002",
+ lessonsCompleted: [0, 1, 2, 3]});
+
+// ** log the user in
+ console.log(users)
+
+/* DOM (Document Object Model) */
+
+//  the First way of accessing an element (most common, use this other than the other)
+console.log(document.querySelector('#title'));
+
+// Second way of accessing an element, it is 'best practice'
+console.log(document.getElementById('title'));
+
+// to change HTML, select the title either class (.) or id (#), and to access the HTML with (.innerHTML =)
+document.querySelector('.title').innerHTML = 'Frontend Simplified'
+
+// to change CSS, with using (.style.) instead of the innerHTML
+document.querySelector('.title').style.fontSize = '12px'
+
+// Button function
+
+// function changeTitleToRed() {
+//     // to change elements when the button is press is to put it within the "{}"
+//     document.querySelector('.title').style.color = 'red'
+//     console.log('clicked');
+// }
+
+// create a darktheme/mode
+function toggleDarkMode() {
+    document.querySelector('body').classList.toggle('dark-theme')
+}
